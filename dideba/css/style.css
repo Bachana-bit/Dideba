@@ -1,0 +1,51 @@
+:root{--ob:#101010;--bu:#481D25;--cr:#762D36;--au:#C6A15B;--pa:#E8DDC5;--st:#A9A193;--iv:#F6F0E5;--serif:"Cormorant Garamond","Noto Serif Georgian",Georgia,serif;--sans:"Noto Sans Georgian","Segoe UI",system-ui,sans-serif;--w:min(1180px,92vw)}
+*,*::before,*::after{box-sizing:border-box}
+body,h1,h2,h3,p,ul,ol,figure,dialog{margin:0}
+ul,ol{padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{background:var(--ob);color:var(--iv);font:400 1.02rem/1.7 var(--sans);min-height:100vh;position:relative}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:2;background:radial-gradient(420px circle at var(--mx,50%) var(--my,30%),rgba(198,161,91,.08),transparent 70%)}
+img,svg,canvas{display:block;max-width:100%}
+a{color:var(--au)}
+h1,h2,h3{font-family:var(--serif);line-height:1.05;overflow-wrap:anywhere}
+h1{font-size:clamp(2.7rem,9.5vw,7.5rem)}
+h2{font-size:clamp(2rem,5.5vw,3.8rem);margin-bottom:1rem}
+h3{font-size:1.55rem}
+.wrap{width:var(--w);margin-inline:auto}
+section{padding:clamp(3.5rem,9vw,7rem) 0;position:relative}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:1rem;top:1rem;z-index:300;background:var(--au);color:#000;padding:.5rem 1rem}
+:focus-visible{outline:2px solid var(--au);outline-offset:3px}
+.eyebrow{color:var(--au);letter-spacing:.28em;text-transform:uppercase;font-size:.72rem}
+.ka{color:var(--st);font-size:.95rem}
+.lead{font-size:1.15rem;max-width:62ch;margin-top:1rem}
+.note{border-left:2px solid var(--au);padding:.6rem 1rem;color:var(--st);max-width:70ch;margin:1rem 0}
+.pg{padding-top:8rem}
+.pg h1{font-size:clamp(2.4rem,7vw,5rem)}
+.pad{padding:1rem}
+.more{margin-top:2rem}
+.parch{background:#efe5cd radial-gradient(rgba(72,29,37,.06) 1px,transparent 1px) 0 0/6px 6px;color:#2a2018}
+.parch h2,.parch h3{color:var(--bu)}.parch .eyebrow{color:var(--cr)}.parch .ka{color:#6b5d4a}
+.hero{min-height:100vh;min-height:100svh;display:grid;align-content:center;padding:7rem 0 5rem;overflow:clip;background:radial-gradient(ellipse at 72% 18%,#6b2a37,var(--bu) 32%,var(--ob) 80%)}
+.hero svg{position:absolute;left:0;right:0;bottom:0;width:100%;height:50%;pointer-events:none}
+#dust{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero .wrap{position:relative;z-index:3}
+.hero h1 span{display:block;overflow:hidden;padding-bottom:.08em}
+.hero h1 i{display:block;font-style:normal;transform:translateY(105%);animation:mask 1.1s cubic-bezier(.2,.7,.2,1) .3s forwards}
+.hero h1 span+span i{animation-delay:.5s}
+.cta{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem}
+.tlind{display:flex;align-items:center;gap:.8rem;margin-top:3rem;color:var(--st);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase}
+.tlind i{flex:0 1 220px;height:1px;background:var(--au);transform-origin:left;animation:draw 2s .8s both}
+.scroll{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);z-index:3;color:var(--au);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;padding:.6rem}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:2rem;align-items:start}
+.feat{padding:2rem;border:1px solid var(--cr);background:rgba(255,255,255,.35)}
+.feat ul{margin:1rem 0 1.5rem;padding-left:1.1rem}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1rem;margin-bottom:3rem;text-align:center;color:var(--st)}
+.stats b{display:block;font:700 clamp(2.4rem,6vw,3.6rem) var(--serif);color:var(--au)}
+.mapp{background:linear-gradient(135deg,var(--bu),var(--ob))}
+.final{text-align:center;padding-block:clamp(6rem,16vw,12rem);background:radial-gradient(circle at 50% 100%,var(--cr),var(--ob) 70%)}
+.final h2{font-size:clamp(2.2rem,7vw,5.5rem);margin-bottom:2rem}
+footer{border-top:1px solid rgba(198,161,91,.4);padding:3rem 0;background:#0a0a0a;color:var(--st);font-size:.9rem}
+footer .wrap{display:grid;gap:1rem}
+footer .orn{color:var(--au);letter-spacing:.6em;text-align:center}
+.pg .two,#gold{margin-top:2rem}.tlsec{padding-top:0}.parch h1{color:var(--bu)}.src{padding-block:2rem}

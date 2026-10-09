@@ -1,0 +1,18 @@
+@media(max-width:960px){
+.burger{display:grid}
+.links{position:fixed;top:4rem;left:0;right:0;flex-direction:column;gap:0;background:#101010;border-bottom:1px solid var(--au);max-height:0;overflow:hidden;visibility:hidden;transition:max-height .4s,visibility .4s}
+.links.open{max-height:calc(100vh - 4rem);overflow:auto;visibility:visible}
+.links a{display:flex;align-items:center;min-height:48px;padding:0 6vw;border-bottom:0;border-top:1px solid rgba(198,161,91,.15)}
+.mapgrid,.kh,.her,.her.alt{grid-template-columns:1fr}
+.kh .portrait{max-width:240px}.her.alt .hp{order:0}
+}
+@media(max-width:600px){
+.cta .btn{width:100%}
+.bar label{flex:1 1 100%}
+.list .card{grid-template-columns:84px 1fr}
+#lf{height:55vh}
+.feat{padding:1.2rem}
+.tlind i{flex-basis:80px}
+.logo small{display:none}
+}
+@media(min-width:1600px){:root{--w:min(1400px,86vw)}}
